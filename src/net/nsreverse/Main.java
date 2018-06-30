@@ -1,19 +1,12 @@
 package net.nsreverse;
 
-import net.nsreverse.objective1_java_class_design.d_override_hashcode_equals_tostring.Example1;
-import net.nsreverse.utils.Log;
+import net.nsreverse.objective1_java_class_design.e_singleton_design_pattern.Example2_Immutable_Classes;
 
 public class Main {
 
     public static void main(String[] args) {
-        Example1 example1 = new Example1();
-
-        Log.out("" + example1.equals(new Example1()));  // true
-        Log.out("" + example1.hashCode());              // HashCode appears here
-        Log.out(example1.toString());                           // Example1 > Value = 1
-
-        Example1 example1_2 = new Example1();
-        example1_2.setValue(4);
-        Log.out("" + example1.equals(example1_2));      // false
+        Example2_Immutable_Classes ex2 = new Example2_Immutable_Classes("asdf", 12);
+        // ex2.value1 = "qwerty"; // Unable to perform this action. Final.
+        // ex2.value2 = 213;      // Unable to perform this action. Final.
     }
 }
