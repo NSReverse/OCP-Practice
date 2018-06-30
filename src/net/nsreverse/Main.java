@@ -1,18 +1,19 @@
 package net.nsreverse;
 
-import net.nsreverse.objective1_java_class_design.c_implement_polymorphism.Example1;
-import net.nsreverse.objective1_java_class_design.c_implement_polymorphism.Example1_Child1;
-import net.nsreverse.objective1_java_class_design.c_implement_polymorphism.Example1_Child2;
+import net.nsreverse.objective1_java_class_design.d_override_hashcode_equals_tostring.Example1;
+import net.nsreverse.utils.Log;
 
 public class Main {
 
     public static void main(String[] args) {
         Example1 example1 = new Example1();
-        Example1_Child1 child1 = new Example1_Child1();
-        Example1_Child2 child2 = new Example1_Child2();
 
-        example1.print();   // Printing from parent
-        child1.print();     // Printing from Child 1
-        child2.print();     // Printing from Child 2
+        Log.out("" + example1.equals(new Example1()));  // true
+        Log.out("" + example1.hashCode());              // HashCode appears here
+        Log.out(example1.toString());                           // Example1 > Value = 1
+
+        Example1 example1_2 = new Example1();
+        example1_2.setValue(4);
+        Log.out("" + example1.equals(example1_2));      // false
     }
 }
