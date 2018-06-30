@@ -1,12 +1,12 @@
 package net.nsreverse;
 
-import net.nsreverse.objective1_java_class_design.e_singleton_design_pattern.Example2_Immutable_Classes;
+import net.nsreverse.objective1_java_class_design.f_static_keyword.Example1;
+import net.nsreverse.objective1_java_class_design.f_static_keyword.Example2;
 
 public class Main {
 
     public static void main(String[] args) {
-        Example2_Immutable_Classes ex2 = new Example2_Immutable_Classes("asdf", 12);
-        // ex2.value1 = "qwerty"; // Unable to perform this action. Final.
-        // ex2.value2 = 213;      // Unable to perform this action. Final.
+        Example1.executeExample(); // static keyword practice
+        Example2.executeExample(); // more static practice, prints 2
     }
 }
