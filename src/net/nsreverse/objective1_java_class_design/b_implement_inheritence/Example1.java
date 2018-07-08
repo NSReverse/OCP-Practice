@@ -10,13 +10,13 @@ import net.nsreverse.utils.Log;
 public class Example1 extends ExampleParent {
     @Override
     public void doX() {
-        Log.out("Child do X");
+        Log.d("Child do X");
         super.doX();
     }
 
     @Override
     protected void doY() {
-        Log.out("Child do X");
+        Log.d("Child do X");
         super.doY();
     }
 }
@@ -28,12 +28,12 @@ public class Example1 extends ExampleParent {
  */
 class ExampleParent {
     public void doX() {
-        Log.out("Parent do X");
+        Log.d("Parent do X");
     }
     protected void doY() {
-        Log.out("Parent do Y");
+        Log.d("Parent do Y");
     }
     private void doZ() {
-        Log.out("Parent do Z");
+        Log.d("Parent do Z");
     }
 }

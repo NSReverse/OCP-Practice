@@ -10,6 +10,6 @@ import net.nsreverse.utils.Log;
 public class Example1_Child2 extends Example1 {
     @Override
     public void print() {
-        Log.out("Printing from Child 2");
+        Log.d("Printing from Child 2");
     }
 }

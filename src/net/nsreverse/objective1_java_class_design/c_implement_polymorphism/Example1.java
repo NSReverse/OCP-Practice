@@ -9,6 +9,6 @@ import net.nsreverse.utils.Log;
  */
 public class Example1 {
     public void print() {
-        Log.out("Printing from parent");
+        Log.d("Printing from parent");
     }
 }

@@ -16,7 +16,7 @@ public class Example2 {
 
     public static void executeExample() {
         StaticNested nested = new StaticNested();
-        Log.out("Value of staticVar > " + staticVar);
+        Log.d("Value of staticVar > " + staticVar);
     }
 
     public static class StaticNested {
