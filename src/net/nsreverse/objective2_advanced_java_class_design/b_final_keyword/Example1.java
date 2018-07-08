@@ -23,17 +23,17 @@ public class Example1 {
      * final doX() -
      *
      * This method is final and cannot be overridden or hidden in a subclass.
-     * Prints out text.
+     * Prints d text.
      */
     public final void doX() {
-        Log.out("Example1.i -> " + i);
+        Log.d("Example1.i -> " + i);
     }
 
     public void doY() {
         final int x;    // Must be assigned before use
         x = 22;         // legal as long as x is not assigned again.
 
-        Log.out("doY(): x -> " + x);
+        Log.d("doY(): x -> " + x);
     }
 
     public static class Example1_Child extends Example1 {

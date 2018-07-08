@@ -8,13 +8,13 @@ public class Example1 implements IFace1,
     @Override // From IFace1
     public void methodX() {
         // Interface-compliant method for IFace1
-        Log.out("Interface-compliant method for IFace1");
+        Log.d("Interface-compliant method for IFace1");
     }
 
     @Override // From IFace2
     public void methodY() {
         // Interface-compliant method for IFace2
-        Log.out("Interface-compliant method for IFace2");
+        Log.d("Interface-compliant method for IFace2");
     }
 }
 

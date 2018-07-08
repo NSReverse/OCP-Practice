@@ -19,6 +19,6 @@ abstract class Example2_IsValid {
 
     public void doSomething() {
         // concrete method.
-        Log.out("Example2_IsValid.value -> " + value);
+        Log.d("Example2_IsValid.value -> " + value);
     }
 }

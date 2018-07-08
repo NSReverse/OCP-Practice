@@ -10,7 +10,7 @@ import net.nsreverse.utils.Log;
 public class Example1 extends AbstractExample1 {
     @Override
     public void printExample() {
-        Log.out("Method overridden from abstract class AbstractExample1.");
+        Log.d("Method overridden from abstract class AbstractExample1.");
     }
 }
 

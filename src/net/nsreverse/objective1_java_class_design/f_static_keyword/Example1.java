@@ -21,8 +21,8 @@ public class Example1 {
         holder1.instanceValue = 1;
         holder1.staticValue = 1;    // IDE warns about modifying static value within an instance.
 
-        Log.out("holder2.instanceValue -> " + holder2.instanceValue);   // 0
-        Log.out("holder2.staticValue   -> " + holder2.staticValue);     // 1
+        Log.d("holder2.instanceValue -> " + holder2.instanceValue);   // 0
+        Log.d("holder2.staticValue   -> " + holder2.staticValue);     // 1
 
         Holder.StaticHolder.executeExample();                                   // 1
     }
@@ -34,7 +34,7 @@ class Holder {
     static {
         // Initialization code called once, even though there are 2 instances.
         // Cannot access instance variables in this scope.
-        Log.out("Static Initializer -> Holder");
+        Log.d("Static Initializer -> Holder");
     }
 
     public int instanceValue = 0;
@@ -44,7 +44,7 @@ class Holder {
     // Has access to other static members of containing class.
     static class StaticHolder {
         static void executeExample() {
-            Log.out("StaticHolder accessing Holder's static member, staticValue: " + staticValue);
+            Log.d("StaticHolder accessing Holder's static member, staticValue: " + staticValue);
         }
     }
 

@@ -12,7 +12,7 @@ public class Example1 {
     public class Inner {
         // private static final Integer i = new Integer(0); // Inner classes cannot have static members
         void doX() {
-            Log.out("Inner class, doX()");
+            Log.d("Inner class, doX()");
         }
     }
 

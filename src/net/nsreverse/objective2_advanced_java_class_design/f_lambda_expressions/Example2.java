@@ -31,7 +31,7 @@ public class Example2 {
      * @param if2 Anonymous/lambda argument based on a functional interface.
      */
     private static void call(IFace2 if2) {
-        Log.out(if2.callback());
+        Log.d(if2.callback());
     }
 
     private static void call2() {
@@ -49,7 +49,7 @@ public class Example2 {
         // However, if types are specified, they must match exactly.
         IFace2_1 if2 = (x, y) -> x + y;
 
-        Log.out("Lambda expression multiple arguments (add 2 ints) -> " + if2.add(4, 3));
+        Log.d("Lambda expression multiple arguments (add 2 ints) -> " + if2.add(4, 3));
     }
 
     public interface IFace2 {

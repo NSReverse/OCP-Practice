@@ -22,33 +22,33 @@ public class Example1 {
         }
 
         public void printAngle() {
-            Log.out("           This direction is at " + angle + " degrees.");
+            Log.d("           This direction is at " + angle + " degrees.");
         }
 
         public void printEnumInformation() {
-            Log.out("   Name            : " + name());
-            Log.out("   To String       : " + toString());
-            Log.out("   Ordinal         : " + ordinal());
-            Log.out("   Declaring Class : " + getDeclaringClass());
+            Log.d("   Name            : " + name());
+            Log.d("   To String       : " + toString());
+            Log.d("   Ordinal         : " + ordinal());
+            Log.d("   Declaring Class : " + getDeclaringClass());
 
         }
     }
 
     public void executeExample() {
-        Log.out("==============ENUM INFORMATION==============");
+        Log.d("==============ENUM INFORMATION==============");
         for (int i = 0; i < Example1.Direction.values().length; i++) {
             Example1.Direction.values()[i].printEnumInformation();
         }
-        Log.out("==============ENUM INFORMATION==============");
+        Log.d("==============ENUM INFORMATION==============");
 
-        Log.out("================ENUM VALUES=================");
-        Log.out("   Possible Values : - " + Example1.Direction.values()[0]);
+        Log.d("================ENUM VALUES=================");
+        Log.d("   Possible Values : - " + Example1.Direction.values()[0]);
         Example1.Direction.values()[0].printAngle();
 
         for (int i = 1; i < Example1.Direction.values().length; i++) {
-            Log.out("                     - " + Example1.Direction.values()[i]);
+            Log.d("                     - " + Example1.Direction.values()[i]);
             Example1.Direction.values()[i].printAngle();
         }
-        Log.out("================ENUM VALUES=================");
+        Log.d("================ENUM VALUES=================");
     }
 }
