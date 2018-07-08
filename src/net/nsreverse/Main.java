@@ -1,14 +1,10 @@
 package net.nsreverse;
 
-import net.nsreverse.objective2_advanced_java_class_design.f_lambda_expressions.Example1;
-import net.nsreverse.objective2_advanced_java_class_design.f_lambda_expressions.Example2;
+import net.nsreverse.objective3_generics_and_collections.a_create_use_generic_class.Example1;
 
 public class Main {
 
     public static void main(String[] args) {
-        Example1 e1 = new Example1();
-        e1.executeExample();
-
-        Example2.executeExample();
+        Example1.executeExample();
     }
 }
